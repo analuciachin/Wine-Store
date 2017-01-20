@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>Wine Store</title>
+		<meta charset="UTF-8">
+		<link href="../_css/resets.css" rel="stylesheet" type="text/css">
+		<link href="../_css/shop_layout.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../_js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="../_js/shop.js"></script>
+		<!--<script type="text/javascript" src="../_js/copyright_year.js"></script>-->
+
+	</head>
+
+
+	<body>
+		<div id="gridContainer">
+
+			<header>
+				<h1>Wine Store</h1>
+			</header>
+			
+			<nav>		
+				<div id="nav_section">
+					<a href="../index.html">Home</a>
+				</div>		
+					
+				<div id="nav_section">
+					<a href="about.html">About US</a>
+				</div>
+					
+				<div id="nav_section">
+					<a href="products.html">Products</a>
+				</div>
+					
+				<div id="nav_section">
+					<a>Shop</a>
+				</div>
+					
+				<div id="nav_section">
+					<a href="contact.html">Contact us</a>
+				</div>
+			</nav>
+
+			<main>
+				<h1>Shop online</h1>
+				<p>Choose the bottles you would like to order, your shipping province and preferred shipping method and we will give you an estimate total with tax.</p>
+				
+				<form class="cart" id="cart">
+				<h3>Red Wine</h3>
+				<p>Price: $20/bottle</p>
+				<p>Quantity desired:</p><input type="text" id="txt_red" placeholder="0"></input>
+					
+				<h3>White Wine</h3>
+				<p>Price: $15/bottle</p>
+				<p>Quantity desired:</p><input type="text" id="txt_white" placeholder="0"></input>
+
+				<h3>Champagne</h3>
+				<p>Price: $12/bottle</p>
+				<p>Quantity desired:</p><input type="text" id="txt_champagne" placeholder="0"></input>
+
+				<h3>Estimate Order</h3>
+				<label for="province">Province:</label><br>
+				<select name="province" id="province">
+					<option value="">- select -</option>
+					<option value="quebec">Quebec</option>
+					<option value="ontario">Ontario</option>
+					<option value="alberta">Alberta</option>
+				</select>
+				<h4>Shipping Method:</h4>
+				<input type="radio" name="shipping" id="pickup" value="pickup" checked>
+				<label for="pickup">Pickup (free)</label><br>
+				<input type="radio" name="shipping" id="mail" value="mail">
+				<label for="mail">Mail ($2/bottle)</label><br>
+				<input type="radio" name="shipping" id="ups" value="ups">
+				<label for="ups">UPS ($3/bottle)</label>
+				
+				<h4>Special:</h4>
+				<p>
+				<input type="checkbox" id="feature" value="feature">
+				<label for="feature">Add a special feature.</label><br>
+				</p>
+				<div id="featureSelection">
+					<input type="checkbox" id="gift" value="gift">
+					<label for="gift">Wrap as a gift.</label><br>
+					<input type="checkbox" id="card" value="gift">
+					<label for="card">Include a card.</label><br>
+					<input type="checkbox" id="flowers" value="gift">
+					<label for="flowers">Include flowers.<br>
+				</div>
+				
+				<h4>Click to estimate:</h4>
+				<label for="estimate">Estimate Total</label>
+				<input type="submit" id="estimate">
+				<input type="text" id="total" placeholder="0.00">
+
+				</form>
+
+				<div id="results"></div>
+			</main>
+
+			<aside>
+				<h1>Activities</h1>
+				<h3>Wine Degustation</h3>
+				<img src="../_images/wine_degustation.jpg" alt="Wine Degustation">
+				<p>Phasellus eu enim ac urna placerat cursus. Mauris feugiat dui iaculis nisl tempus, et rutrum erat hendrerit. Proin posuere augue nulla. Etiam porta quis metus eget tincidunt. Fusce facilisis quam ac ipsum tincidunt aliquam. </p>
+				<h3>Visiting a winery</h3>
+				<img src="../_images/winery.jpg" alt="Wine Degustation">
+				<p>Curabitur quis orci ac nisi ornare vestibulum. Aliquam vitae tortor non orci mattis condimentum in convallis odio. Ut quam lectus, mollis vitae turpis vel, condimentum ultricies sem. Cras non volutpat nisl. Maecenas vestibulum commodo nibh, a fermentum libero molestie a. Nulla facilisi. Quisque vitae mi eget augue tincidunt scelerisque. Phasellus a luctus leo. Suspendisse dictum luctus metus, et vulputate est feugiat at. Maecenas iaculis facilisis enim in finibus.</p> 
+			</aside>
+
+			<footer>
+				Copyright &copy; <span id="copyrightYear"></span>
+				<a href="#">Wine Store</a>
+				-&nbsp;
+				<span class="signature">Designed by Ana Lucia</span>
+			</footer>
+
+		</div>	
+	</body>
+</html>
+

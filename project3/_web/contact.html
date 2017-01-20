@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>Wine Store</title>
+		<meta charset="UTF-8">
+		<link href="../_css/resets.css" rel="stylesheet" type="text/css">
+		<link href="../_css/contact_layout.css" rel="stylesheet" type="text/css">
+		
+		<script type="text/javascript" src="../_js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="../_js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../_js/contact.js"></script>
+		<script type="text/javascript" src="../_js/copyright_year.js"></script>
+		
+	</head>
+
+
+	<body>
+		<div id="gridContainer">
+			<header>
+					<h1>Wine Store</h1>
+			</header>
+
+			<nav>		
+				<div id="nav_section">
+					<a href="../index.html">Home</a>
+				</div>		
+						
+				<div id="nav_section">
+					<a href="about.html">About US</a>
+				</div>
+						
+				<div id="nav_section">
+					<a href="products.html">Products</a>
+				</div>
+						
+				<div id="nav_section">
+					<a href="shop.html">Shop</a>
+				</div>
+							
+				<div id="nav_section">
+					<a>Contact us</a>
+				</div>
+			</nav>
+
+			<main>
+				<h1>Contact us</h1>
+					<aside>
+						<h3>Getting in touch is easy!</h3>
+						<p>123 Love Wine street<br>
+						A1B 3C4<br>
+						Montreal, QC</p>
+						<p>contact@winestore.ca</p>
+						<p><img src="../_images/map.png" alt="Map"></p>
+					</aside>
+					<aside>
+						<form action="send_form.php" method="post" class="contact" id="contact">
+						<h3>Email us any questions. We will be happy getting in touch with you!</h3><br>
+						<input type="text" name="name" id="name" placeholder="Your name" class="tb_style">
+						<input type="text" name="email" id="email" placeholder="Your email" class="tb_style">
+						<input type="text" name="message" id="message" placeholder="How can we help you?" class="msgtb_style">
+						<input type="submit" value="Send">
+						</form>
+					</aside>
+			</main>
+			
+
+			<footer>
+				Copyright &copy; <span id="copyrightYear"></span>
+				<a href="#">Wine Store</a>
+				-&nbsp;
+				<span class="signature">Designed by Ana Lucia</span>
+			</footer>
+		</div>
+	</body>
+</html>		
